@@ -1,4 +1,4 @@
-package com.pogat.learnings.nisum.Permutations;
+package com.pogat.learnings.Permutations;
 
 public class PermutationString {
 	public static void main(String[] args) {
