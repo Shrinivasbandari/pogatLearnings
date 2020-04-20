@@ -45,12 +45,12 @@ public class ExcelDateReader {
 		HSSFRow row = myExcelSheet.getRow(0);
 		Cell cell = row.getCell(0);// Cell celldata=(Cell) cellitr.next();
 
-		if (row.getCell(0).getCellType() == Cell.CELL_TYPE_STRING) {
+		if (row.getCell(0).getCellType() == cell.getCellType()) {
 			String name = row.getCell(0).getStringCellValue();
 			System.out.println("name : " + name);
 		}
 
-		if (row.getCell(1).getCellType() == HSSFCell.CELL_TYPE_NUMERIC) {
+		if (row.getCell(1).getCellType() == cell.getCellType()){
 			Date birthdate = row.getCell(1).getDateCellValue();
 			System.out.println("birthdate :" + birthdate);
 		}
